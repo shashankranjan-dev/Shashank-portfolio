@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--=============== FAVICON ===============-->
+    <link
+      rel="shortcut icon"
+      href="assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <!--=============== BOXICONS ===============-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!--=============== SWIPER CSS ===============-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Shashank Ranjan</title>
+  </head>
+  <body>
+    <!--==================== HEADER ====================-->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img   src="assets/img/s-removebg-preview.png"
+          alt=""
+          class="testimonial__perfil-img"></i> Shashank
+        </a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#services" class="nav__link">Services</a>
+            </li>
+            <li class="nav__item">
+              <a href="#Skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#project" class="nav__link">Project</a>
+            </li>
+          </ul>
+
+          <div class="nav__close" id="nav-close">
+            <i class="bx bx-x"></i>
+          </div>
+        </div>
+
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="bx bx-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__shop" id="cart-shop">
+            <i class="bx bx-arrow-from-left"></i>
+          </div>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-grid-alt"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--==================== CART ====================-->
+    <div class="cart" id="cart">
+      <i class="bx bx-x cart__close" id="cart-close"></i>
+
+      <h2 class="cart__title-center">My Qualifications</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="https://images.shiksha.com/mediadata/images/1509603952phpLKVgEd.jpeg"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">CIEM College, Kolkata</h3>
+            <span class="cart__price">B.Tech, CSE</span>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="https://assets.telegraphindia.com/telegraph/9BokStudents1_175628.jpg"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">MGM School, Bokaro</h3>
+            <span class="cart__price">Intermediate, Science</span>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="https://preprimaryschools.com/assets/uploads/school/gallery/23122022055630_4_682349_DAV_Public_School_Samastipur2.jpeg"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">DAV School, Samastipur</h3>
+            <span class="cart__price">Matriculation, CGPA - 9.0</span>
+          </div>
+        </article>
+      </div>
+      <br /><br />
+      <h2 class="cart__title-center">Work Experience</h2>
+
+      <div class="cart__container">
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="data:image/jpeg;base64,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"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Helicoid Point Technology</h3>
+            <span class="cart__price">Full Stack Developer, Bangalore</span>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS-NVNbDUhxG4gZvEUTUJ0S1akAqgNOCpfEQ&usqp=CAU"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Green Canvas</h3>
+            <span class="cart__price">Full Stack Developer, Remote</span>
+          </div>
+        </article>
+
+        <article class="cart__card">
+          <div class="cart__box">
+            <img
+              src="https://3.imimg.com/data3/GM/DT/MY-12502176/silop-smart-automation-technologies-private-limited-logo-120x120.jpg"
+              alt=""
+              class="cart__img"
+            />
+          </div>
+
+          <div class="cart__details">
+            <h3 class="cart__title">Silop Automation Technologies</h3>
+            <span class="cart__price">Front End Developer, Remote</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!--==================== MAIN ====================-->
+    <main class="main">
+      <!--==================== HOME ====================-->
+      <section class="home" id="home">
+        <div class="home__container container grid">
+          <div class="home__img-bg">
+            <img
+              src="assets/img/s-removebg-preview-01.jpeg-removebg-preview.png"
+              alt=""
+              class="home__img"
+            />
+          </div>
+
+          <div class="home__social">
+            <a
+              href="https://www.facebook.com/shashank.king.754"
+              target="_blank"
+              class="home__social-link"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.linkedin.com/in/shashankranjan/"
+              target="_blank"
+              class="home__social-link"
+            >
+              Linkedin
+            </a>
+            <a
+              href="https://www.instagram.com/shashankranjan30/"
+              target="_blank"
+              class="home__social-link"
+            >
+              Instagram
+            </a>
+          </div>
+
+          <div class="home__data">
+            <h1 class="home__title">
+              Hi , <br />
+              I ' m Shashank
+            </h1>
+            <p class="home__description">
+              Full Stack Web Developer and UI / UX designer.
+            </p>
+            <span class="home__price">Kolkata, India</span>
+
+            <div class="home__btns">
+               
+              <a href="#services" class="button button--gray button--small">
+                HIRE ME
+              </a>
+<a href="https://github.com/shashankranjan-dev">
+              <button class="button home__button">Github</button></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== FEATURED ====================-->
+      <section class="featured section container" id="services">
+        <h2 class="section__title">Services I Provide</h2>
+
+        <div class="featured__container grid">
+          <article class="featured__card">
+            <span class="featured__tag">Sale</span>
+
+            <img
+              src="https://img.icons8.com/external-flaticons-flat-flat-icons/256/external-web-development-digital-nomading-relocation-flaticons-flat-flat-icons.png"
+              alt=""
+              class="featured__img"
+            />
+
+            <div class="featured__data">
+              <h3 class="featured__title">Web Development</h3>
+              <span class="featured__price">Full Stack Web Developer</span>
+            </div>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+                <button class="button featured__button">Mail Me :</button></a>
+          </article>
+
+          <article class="featured__card">
+            <span class="featured__tag">Sale</span>
+
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-app-development-media-agency-flaticons-lineal-color-flat-icons.png"
+              alt=""
+              class="featured__img"
+            />
+
+            <div class="featured__data">
+              <h3 class="featured__title">App Development</h3>
+              <span class="featured__price">Flutter / React Native</span>
+            </div>
+<a href="https://mail.google.com/mail/u/0/#inbox">
+            <button class="button featured__button">Mail Me :</button></a>
+          </article>
+
+          <article class="featured__card">
+            <span class="featured__tag">Sale</span>
+
+            <img
+              src="https://img.icons8.com/external-flaticons-lineal-color-flat-icons/256/external-ui-computer-science-flaticons-lineal-color-flat-icons.png"
+              alt=""
+              class="featured__img"
+            />
+
+            <div class="featured__data">
+              <h3 class="featured__title">UI / UX Designer</h3>
+              <span class="featured__price">Figma, Illustrator, Photoshop</span>
+            </div>
+
+            <a href="https://mail.google.com/mail/u/0/#inbox">
+                <button class="button featured__button">Mail Me :</button></a>
+          </article>
+        </div>
+      </section>
+
+      <!--==================== STORY ====================-->
+      <section class="story section container">
+        <div class="story__container grid">
+          <div class="story__data">
+            <h2 class="section__title story__section-title">About Me</h2>
+
+            <h1 class="story__title">Hi I'm Shashank</h1>
+
+            <p class="story__description">
+              A CSE sophomore currently undergraduate student at Calcutta
+              Institute Of Engineering & Management. I am a self-taught
+              developer and designer.
+            </p>
+
+            <a
+              href="assets/img/Shashank_ Ranjan .pdf"
+              class="button button--small"
+              download=""
+              >DOWNLOAD CV</a
+            >
+          </div>
+
+          <div class="story__images">
+            <img
+              src="assets/img/s-removebg-preview.png"
+              alt=""
+              class="story__img"
+            />
+            <div class="story__square"></div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== PRODUCTS ====================-->
+      <section class="products section container" id="Skills">
+        <h2 class="section__title">Tech Skills</h2>
+
+        <div class="products__container grid">
+          <article class="products__card">
+            <img
+              src="https://img.icons8.com/color/1x/react-native.png"
+              alt=""
+              class="products__img"
+            />
+
+            <h3 class="products__title">ReactJs</h3>
+           
+          </article>
+
+          <article class="products__card">
+            <img
+              src="https://img.icons8.com/color/256/nodejs.png"
+              alt=""
+              class="products__img"
+            />
+
+            <h3 class="products__title">NodeJs</h3>
+            
+          </article>
+
+          <article class="products__card">
+            <img
+              src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/256/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-color-tal-revivo.png"
+              alt=""
+              class="products__img"
+            />
+
+            <h3 class="products__title">HTML</h3>
+            
+          </article>
+
+          <article class="products__card">
+            <img
+              src="https://img.icons8.com/fluency/256/css3.png"
+              alt=""
+              class="products__img"
+            />
+
+            <h3 class="products__title">CSS</h3>
+            
+          </article>
+
+          <article class="products__card">
+            <img
+              src="https://img.icons8.com/fluency/256/flutter.png"
+              alt=""
+              class="products__img"
+            />
+
+            <h3 class="products__title">Flutter</h3>
+            
+          </article>
+          <article class="products__card">
+            <img
+              src="     https://img.icons8.com/ios-filled/256/github.png"
+              alt=""
+              class="products__img"
+            />
+
+            <h3 class="products__title">Github</h3>
+            
+          </article>
+        </div>
+      </section>
+
+      <!--==================== TESTIMONIAL ====================-->
+      <section class="testimonial section container">
+        <div class="testimonial__container grid">
+          <div class="swiper testimonial-swiper">
+            <div class="swiper-wrapper">
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                    Breadth first search is a graph traversal algorithm that
+                    starts traversing the graph from root node and explores all
+                    the neighbouring nodes. Then, it selects the nearest node and
+                    explore all the unexplored nodes. The algorithm follows the
+                    same process for each of the nearest node until it finds the
+                    goal..
+                </p>
+                <h3 class="testimonial__date button button--small">March 27. 2021</h3>
+
+                <div class="testimonial__perfil">
+                  <img
+                    src="assets/img/s-removebg-preview.png"
+                    alt=""
+                    class="testimonial__perfil-img"
+                  />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name"
+                      >Shashank Ranjan</span
+                    >
+                    <span class="testimonial__perfil-detail"
+                      >Technical Writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div class="testimonial__card swiper-slide">
+                <div class="testimonial__quote">
+                  <i class="bx bxs-quote-alt-left"></i>
+                </div>
+                <p class="testimonial__description">
+                  Breadth first search is a graph traversal algorithm that
+                  starts traversing the graph from root node and explores all
+                  the neighbouring nodes. Then, it selects the nearest node and
+                  explore all the unexplored nodes. The algorithm follows the
+                  same process for each of the nearest node until it finds the
+                  goal..
+                </p>
+                <a href="https://shashankking9955.hashnode.dev/"
+                <h3 class="testimonial__date  button button--small">Continue Reading</h3>
+            </a>
+            <br/>
+                <div class="testimonial__perfil">
+                  <img
+                    src="assets/img/s-removebg-preview.png"
+                    alt=""
+                    class="testimonial__perfil-img"
+                  />
+
+                  <div class="testimonial__perfil-data">
+                    <span class="testimonial__perfil-name"
+                      >Shashank Ranjan</span
+                    >
+                    <span class="testimonial__perfil-detail"
+                      >Technical Writer</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+            
+            </div>
+
+            <div class="swiper-button-next">
+              <i class="bx bx-right-arrow-alt"></i>
+            </div>
+            <div class="swiper-button-prev">
+              <i class="bx bx-left-arrow-alt"></i>
+            </div>
+          </div>
+
+          <div class="testimonial__images">
+            <div class="testimonial__square"></div>
+            <img
+              src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8dGVjaG5vbG9neXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+              class="testimonial__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NEW ====================-->
+      <section class="new section container" id="project">
+        <h2 class="section__title">Some of my Works</h2>
+
+        <div class="new__container">
+          <div class="swiper new-swiper">
+            <div class="swiper-wrapper">
+              <article class="new__card swiper-slide">
+               
+
+                <img src="https://img.icons8.com/fluency/1x/interior.png" alt="" class="new__img" />
+
+                <div class="new__data">
+                  <h3 class="new__title">Cross Angle Interior</h3>
+                  <span class="new__price">ReactJs, NodeJs</span>
+                </div>
+<a href="http://interior-rs94.vercel.app/"
+                <button class="button new__button">View</button></a>
+              </article>
+
+              <article class="new__card swiper-slide">
+                
+
+                <img src="https://img.icons8.com/color-glass/1x/e-learning.png" alt="" class="new__img" />
+
+                <div class="new__data">
+                  <h3 class="new__title">E-learning</h3>
+                  <span class="new__price">ReactJs</span>
+                </div>
+                <a href="https://e-learning-jet.vercel.app/"
+                <button class="button new__button">View</button></a>
+              </article>
+
+              <article class="new__card swiper-slide">
+            
+
+                <img src="https://img.icons8.com/office/256/alarm-clock.png" alt="" class="new__img" />
+
+                <div class="new__data">
+                  <h3 class="new__title">Alarm Clock</h3>
+                  <span class="new__price">Javascript</span>
+                </div>
+<a href="https://shashankranjan-dev.github.io/Alarm-clock-Javascript/"
+                <button class="button new__button">View</button></a>
+              </article>
+
+              <article class="new__card swiper-slide">
+              
+
+                <img src="https://img.icons8.com/fluency/1x/sun.png" alt="" class="new__img" />
+
+                <div class="new__data">
+                  <h3 class="new__title">Weather-App</h3>
+                  <span class="new__price">ReactJs</span>
+                </div>
+<a href="https://weather-app-rouge-nine.vercel.app/">
+                <button class="button new__button">View</button></a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== NEWSLETTER ====================-->
+      <!-- <section class="newsletter section container">
+        <div class="newsletter__bg grid">
+          <div>
+            <h2 class="newsletter__title">
+              Subscribe Our <br />
+              Newsletter
+            </h2>
+            <p class="newsletter__description">
+              Don't miss out on your discounts. Subscribe to our email
+              newsletter to get the best offers, discounts, coupons, gifts and
+              much more.
+            </p>
+          </div>
+
+          <form action="" class="newsletter__subscribe">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              class="newsletter__input"
+            />
+            <button class="button">SUBSCRIBE</button>
+          </form>
+        </div>
+      </section> -->
+    </main>
+
+    <!--==================== FOOTER ====================-->
+    <footer class="footer section">
+      <span class="footer__copy"
+        >&#169; Shashanranjan-dev. All rigths reserved</span
+      >
+    </footer>
+
+    <!--=============== SCROLL UP ===============-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="bx bx-up-arrow-alt scrollup__icon"></i>
+    </a>
+
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
